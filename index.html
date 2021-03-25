@@ -4,14 +4,21 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/styles/index.css" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>People</title>
   </head>
   <body>
-    <header>
-      <h1>Hello World</h1>
+    <header class="header">
+      <h1 class="header__title">Using the Fetch API</h1>
+      <select class="header__filter" name="status" id="status">
+        <option value="not-completed" selected>To Do</option>
+        <option value="completed">Completed</option>
+        <option value="all">All</option>
+      </select>
+      <button type="button" class="header__search-button">Go!</button>
     </header>
-    <div id="app"></div>
+    <main class="content"></main>
+    <footer class="footer">Made with love by Namir Sayed-Ahmad Baraza</footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
